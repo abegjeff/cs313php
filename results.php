@@ -4,7 +4,6 @@ session_start();
 
 <!DOCTYPE HTML> 
 <html>
-
 <head>
 <title>Form Information></title>
   <link rel="stylesheet" href="resultsCSS.css">
@@ -13,37 +12,36 @@ session_start();
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 
-
 <body> 
 <div class="heading">Results</div>
 
 <?php
-
-
 $filename = "myFile.txt";
 
-
-$file = fopen ($filename, "a");
-
-if (!empty($_POST) && $_SESSION['voted'] === false)
+if (!empty($_POST))
 {
-$superpower = $_POST['superpower'];
-$favcolor = $_POST['favcolor'];
-$swift = $_POST['swift'];
-$sport = $_POST['sport'];
-		if ($file)
-		{
-			fwrite($file, "$superpower $favcolor $swift $sport ");
-			fclose($file);
-		}
-		else
-		{
-			die ("File did not exist and could not be created.");
-		}
+	$file = fopen ($filename, "a");
+	
+	$superpower = $_POST['superpower'];
+	$favcolor = $_POST['favcolor'];
+	$swift = $_POST['swift'];
+	$sport = $_POST['sport'];
+	
+	if ($file)
+	{
+		fwrite($file, "$superpower $favcolor $swift $sport ");
+		fclose($file);
+	}
+	else
+	{
+		die ("File did not exist and could not be created.");
+	}
   
-  $_SESSION['voted'] = true;
+  $_SESSION[""voted"] = true;
 
 }
+
+$file = fopen("$filename", "r");
 
 $filecontents = file_get_contents ($filename);
 
