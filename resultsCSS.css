@@ -5,7 +5,7 @@ body {
 	padding: 15px;
 }
 .progress {
-width: 550px;
+width: 650px;
 }
 
 hr {
@@ -18,13 +18,6 @@ hr {
 font-size:350%;
 font-weight:bold;
 text-align:center;
-}
-
-.background{
-	background-color:blue;
-}
-
-.body{
-background-color:blue;
-
+font-family:Gotham;
+background-color:#E5E4E2;
 }

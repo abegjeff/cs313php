@@ -59,8 +59,8 @@ $speedbar =($speedcount/$superherototal) * 100;
 $mindbar =($mindcount/$superherototal) * 100;
 
 echo "<br/><hr>";	
-echo "<img src=\"Avengers.jpg\" alt=\"Avengers\" align=\"right\" height=\"340\" width=\"740\">";
-echo "<h2>Which superpower would you rather have?</h2>";
+echo "<img src=\"Avengers.jpg\" alt=\"Avengers\" align=\"right\" height=\"360\" width=\"640\">";
+echo "<h2><b>Which superpower would you rather have?<b></h2>";
 echo "<div id=\"progress\">" . "Flight: ".
 		"<div class='progress'>"
 		. "<div class='progress-bar progress-bar-success progress-bar-striped' role='progressbar'
@@ -126,8 +126,9 @@ $purplebar = ($purplecount/$colortotal) * 100;
 $blackbar = ($blackcount/$colortotal) * 100;
 $whitebar = ($whitecount/$colortotal) * 100;
 
-echo "<br/><hr>";				
-echo "<h2>What is your favorite color?</h2>";
+echo "<br/><hr>";		
+echo "<img src=\"rainbow.jpg\" alt=\"Rainbow\" align=\"right\" height=\"540\" width=\"640\">";		
+echo "<h2><b>What is your favorite color?</b></h2>";
 echo "<div id=\"progress\">" . "Red: ".
 		"<div class='progress'>"
 		. "<div class='progress-bar progress-bar-info progress-bar-striped' role='progressbar'
@@ -208,7 +209,8 @@ $yesbar = ($yescount/$yntotal) * 100;
 $nobar = ($nocount/$yntotal) * 100;							
 
 echo "<br/><hr>";		
-echo "<h2>Are you a Taylor Swift fan?</h2>";
+echo "<img src=\"taylor.jpg\" alt=\"Taylor Swift\" align=\"right\" height=\"180\" width=\"640\">";	
+echo "<h2><b>Are you a Taylor Swift fan?</b></h2>";
 echo "<div id=\"progress\">" . "Yes: ".
 		"<div class='progress'>"
 		. "<div class='progress-bar progress-bar-danger progress-bar-striped' role='progressbar'
@@ -240,7 +242,8 @@ $footballbar = ($footballcount/$sportstotal) * 100;
 $soccerbar = ($soccercount/$sportstotal) * 100;		
 
 echo "<br/><hr>";		
-echo "<h2>What is your favorite sport?</h2>";
+echo "<img src=\"sports.jpg\" alt=\"Sports\" align=\"right\" height=\"280\" width=\"640\">";	
+echo "<h2><b>What is your favorite sport?</b></h2>";
 echo "<div id=\"progress\">" . "Basketball: ".
 		"<div class='progress'>"
 		. "<div class='progress-bar progress-bar-warning progress-bar-striped' role='progressbar'
