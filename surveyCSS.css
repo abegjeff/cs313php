@@ -1,0 +1,32 @@
+body {
+	background-color: #ffffff;
+	color: #111111;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: 15px;
+}
+
+form {
+	background: #FFCBA4;
+	border-radius: 5px;
+	padding: 20px;
+	width: 40%;
+
+    margin: 0 auto;
+}
+
+fieldset {
+
+}
+
+legend {
+	color: #384313;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-shadow: 0 1px 1px #F6358A;
+}
+
+
+#center{
+	text-align:center;
+}

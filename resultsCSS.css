@@ -1,0 +1,30 @@
+body {
+	background-color: #b0c4de;
+	color: #b0c4de;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: 15px;
+}
+.progress {
+width: 550px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #333; 
+}
+
+.heading {
+font-size:350%;
+font-weight:bold;
+text-align:center;
+}
+
+.background{
+	background-color:blue;
+}
+
+.body{
+background-color:blue;
+
+}
