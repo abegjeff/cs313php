@@ -18,7 +18,7 @@ session_start();
 <?php
 $filename = "myFile.txt";
 
-if (!empty($_POST) && $_SESSION["voted"] === false)
+if (!empty($_POST))
 {
 	$file = fopen ($filename, "a");
 	
