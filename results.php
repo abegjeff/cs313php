@@ -37,7 +37,7 @@ if (!empty($_POST))
 		die ("File did not exist and could not be created.");
 	}
   
-  $_SESSION[""voted"] = true;
+  $_SESSION["voted"] = true;
 
 }
 
