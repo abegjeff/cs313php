@@ -14,7 +14,7 @@ session_start();
 </head>
 
 
-<body background> 
+<body> 
 <div class="heading">Results</div>
 
 <?php
@@ -31,8 +31,6 @@ $superpower = $_POST['superpower'];
 $favcolor = $_POST['favcolor'];
 $swift = $_POST['swift'];
 $sport = $_POST['sport'];
-
-$file = fopen("$filename", "a");
 		if ($file)
 		{
 			fwrite($file, "$superpower $favcolor $swift $sport ");
