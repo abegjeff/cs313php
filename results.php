@@ -58,7 +58,8 @@ $strengthbar =($strengthcount/$superherototal) * 100;
 $speedbar =($speedcount/$superherototal) * 100;
 $mindbar =($mindcount/$superherototal) * 100;
 
-echo "<br/><hr>";		
+echo "<br/><hr>";	
+echo "<img src=\"Avengers.jpg\" alt=\"Avengers\" align=\"right\" height=\"400\" width=\"750\">";
 echo "<h2>Which superpower would you rather have?</h2>";
 echo "<div id=\"progress\">" . "Flight: ".
 		"<div class='progress'>"
