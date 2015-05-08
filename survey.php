@@ -50,7 +50,9 @@ if (isset($_SESSION['voted'])) {
    <input type="radio" name="sport" value="Soccer">Soccer<br /> <br />
    </fieldset>
    
-   <input type="submit" value="Vote"> 
+   <div id="buttonalign">
+   <input type="submit" id="submit" value="Vote"> 
+   </div>
 </form> 
 
 <div id="center">

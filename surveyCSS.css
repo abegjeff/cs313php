@@ -27,3 +27,13 @@ legend {
 #center{
 	text-align:center;
 }
+
+#buttonalign{
+padding-top: 5px;
+}
+#submit {
+	font-size:14px;
+	font-weight:bold;
+	width: 6em;
+	height: 3em;
+}
