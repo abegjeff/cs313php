@@ -1,0 +1,23 @@
+#quantity {
+   padding-left: 30px;  
+}
+
+#lradio {
+	margin-right: 5px;
+}
+
+#cradio {
+	margin-left: 20px;
+	margin-right: 5px;
+}
+
+#rradio {
+	margin-left: 20px;
+	margin-right: 5px;
+}
+
+.styled-select
+{
+	margin-right: 20px;
+	margin-left: 5px;
+}
