@@ -239,7 +239,7 @@ foreach ($db->query("SELECT caliber FROM calibers ORDER BY caliber") as $row)
 	}
 	
 	else{
-		foreach ($db->query("SELECT name, type, caliber, brand, automatic, create_date, quantity, price FROM guns by brand") as $row)
+		foreach ($db->query("SELECT name, type, caliber, brand, automatic, create_date, quantity, price FROM guns ORDER BY brand") as $row)
 		{	
 		echo "<tr>" . "<td>" . $row['name'] . "</td>" 
 		. "<td>" . $row['type'] . "</td>"
