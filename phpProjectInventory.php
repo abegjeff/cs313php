@@ -38,6 +38,9 @@
 	$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
 	$dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
 	$dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
+	
+	echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser password:$dbPassword<br />\n";
+	
 		try
 		{
 			$user = "inventory";
