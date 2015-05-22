@@ -38,12 +38,11 @@
 	$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
 	$dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
 	$dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
-	$dbName= "php";
 		try
 		{
 			$user = "inventory";
 			$password = "guns"; 
-			$db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
+			$db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 		}
 		catch (PDOException $ex) 
 		{
@@ -239,7 +238,7 @@ foreach ($db->query("SELECT caliber FROM calibers ORDER BY caliber") as $row)
 	}
 	
 	else{
-		foreach ($db->query("SELECT name, type, caliber, brand, automatic, create_date, quantity, price FROM guns") as $row)
+		foreach ($db->query("SELECT name, type, caliber, brand, automatic, create_date, quantity, price FROM guns ORDER BY brand") as $row)
 		{	
 		echo "<tr>" . "<td>" . $row['name'] . "</td>" 
 		. "<td>" . $row['type'] . "</td>"
