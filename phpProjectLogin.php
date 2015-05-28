@@ -28,12 +28,12 @@
     </div>
   </div>
 </nav>
-Home
+
 
 
 <form action="phpProjectAdmin.php" method="POST" id="filterform">
 
- <button type="button" value="pageReset" onclick="pageReset()">Reset</button>
+ <button type="submit" value="Submit">Submit</button>
 </form>
 </body>
 </html>
