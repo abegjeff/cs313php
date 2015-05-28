@@ -41,13 +41,30 @@
 
 <?php	
 
-		try
+	/*	try
 		{
 			$user = "admin";
 			$password = "1111"; 
 			$host = "127.0.0.1";
 			$name = "php_project";
 			$db = new PDO("mysql:host=$host;dbname=$name", $user, $password);
+		}
+		catch (PDOException $ex) 
+		{
+			echo "Error!:" . $ex->getMessage();
+			die(); 
+		}*/
+		
+	$dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
+	$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
+	$dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
+	$dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
+	$dbName= "php";
+		try
+		{
+			$user = "inventory";
+			$password = "guns"; 
+			$db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
 		}
 		catch (PDOException $ex) 
 		{
