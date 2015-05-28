@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Login</title>
+  <title>Clark Center Fires Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -17,17 +17,23 @@
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li><a href="phpProjectHome.php">Home</a></li>
+        <li class="active"><a href="#">Home</a></li>
             <li><a href="phpProjectInventory.php">View Inventory</a></li>
             <li><a href="phpProjectContact.php">Contact Us</a></li>
           </ul>
         </li>
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="phpProjectLogin.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="phpProjectLogin.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
 </nav>
-Login
+Home
+
+
+<form action="phpProjectAdmin.php" method="POST" id="filterform">
+
+ <button type="button" value="pageReset" onclick="pageReset()">Reset</button>
+</form>
 </body>
 </html>
