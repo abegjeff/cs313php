@@ -1,5 +1,5 @@
 legend {
-	color: #E5E4E2;
+	color: #384313;
 	font-size: 16px;
 	font-weight: bold;
 	padding-bottom: 10px;
@@ -9,4 +9,13 @@ legend {
 
 #center{
 	text-align:center;
+}
+
+form {
+	background: #E5E4E2;
+	border-radius: 5px;
+	padding: 20px;
+	width: 40%;
+
+    margin: 0 auto;
 }
