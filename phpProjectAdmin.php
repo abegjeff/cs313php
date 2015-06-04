@@ -75,7 +75,7 @@ else
 			echo "Error!:" . $ex->getMessage();
 			die(); 
 		}
-/*}*/
+}
 
 ?>
 
