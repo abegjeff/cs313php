@@ -30,10 +30,12 @@
 </nav>
 
 <form action="phpProjectAdmin.php" method="POST">
-UserName:
-	<input  type="text" name="username"><br />
-Password:
+ <fieldset>
+   <legend>UserName:</legend>
+	 <input  type="text" name="username"><br />
+   <legend>Password:</legend>
 	<input  type="text" name="password"><br />
+ </fieldset>
  <button type="submit" value="Submit" name="login">Submit</button>
  </form>
  
