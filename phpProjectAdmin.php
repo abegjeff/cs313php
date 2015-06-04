@@ -39,7 +39,7 @@
 </nav>
 <?php	
 
-$openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
+/*$openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
 
 if ($openShiftVar === null || $openShiftVar == "")
 {
@@ -58,7 +58,7 @@ if ($openShiftVar === null || $openShiftVar == "")
 		}
 }
 else 
-{
+{*/
 	$dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
 	$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
 	$dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
@@ -75,7 +75,7 @@ else
 			echo "Error!:" . $ex->getMessage();
 			die(); 
 		}
-}
+/*}*/
 
 ?>
 
