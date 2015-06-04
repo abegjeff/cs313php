@@ -31,9 +31,26 @@
 
 
 
-<form action="phpProjectAdmin.php" method="POST" id="filterform">
+<form action="phpProjectAdmin.php" method="POST" id="login">
+UserName:
+	<input  type="text" name="username"><br />
+Password:
+	<input  type="text" name="password"><br />
+ <button type="submit" value="Submit" name="login">Submit</button>
+ </form>
+ 
+ <?php
+ 
+ if (isset($_POST['login']))
+ {
+	$hashedpw = password_hash($_POST['password'], PASSWORD_DEFAULT);
+	
+	if (password_verify('taco', $hashedpw)) {
+    echo 'Password is valid!';
+ }
+ }
+ ?>
+ 
 
- <button type="submit" value="Submit">Submit</button>
-</form>
 </body>
 </html>

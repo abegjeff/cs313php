@@ -96,6 +96,8 @@ foreach ($db->query("SELECT caliber FROM calibers ORDER BY caliber") as $row)
   <option disabled selected> -- select an option -- </option>
   <option value="Semi-Automatic">Semi-Automatic</option>
   <option value="Automatic">Automatic</option>
+  <option value="Revolver">Revolver</option>
+  <option value="N/A">N/A</option>
 </select> 
 
 <br /><br />

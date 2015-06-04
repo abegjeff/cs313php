@@ -19,6 +19,7 @@
 </head>
 <body>
 
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -41,7 +42,7 @@
 
 <?php	
 
-	/*	try
+		try
 		{
 			$user = "admin";
 			$password = "1111"; 
@@ -53,8 +54,8 @@
 		{
 			echo "Error!:" . $ex->getMessage();
 			die(); 
-		}*/
-		
+		}
+	/*	
 	$dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
 	$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
 	$dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
@@ -70,8 +71,41 @@
 		{
 			echo "Error!:" . $ex->getMessage();
 			die(); 
-		}
+		}*/
 ?>
+
+<?php
+session_start();
+if (!empty($_POST['username']) && !empty(['password']))
+{
+	
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	
+//	echo $username . "<br/>";
+//echo $password . "<br/>";
+	foreach($db->query("SELECT user_name, password FROM user_info;") as $row)
+			{
+				if ($row["user_name"] == $username && $row["password"] == $password)
+				{
+					$_SESSION["logged"] = true;
+				}
+				else
+				{
+					$_SESSION["logged"] = false;
+				}
+			}
+
+
+}
+if ($_SESSION["logged"] == false)
+{
+	header('Location: http://localhost/phpProjectLogin.php');
+	
+}
+
+?>
+
 
 <div class="container">
 	<h1>Edit Inventory</h1>
@@ -134,6 +168,7 @@
   <option disabled selected> -- select an option -- </option>
   <option value="Semi-Automatic">Semi-Automatic</option>
   <option value="Automatic">Automatic</option>
+  <option value="Revolver">Revolver</option>
   <option value="N/A">N/A</option>
 </select>
 <br /> <br/>
