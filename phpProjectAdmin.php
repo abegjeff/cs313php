@@ -108,7 +108,7 @@ if (!empty($_POST['username']) && !empty(['password']))
 }
 if ($_SESSION["logged"] == false)
 {
-	header('Location: http://php-abegjeff.rhcloud.com/phpProjectLogin.php');
+	header('Location:phpProjectLogin.php');
 	
 }
 

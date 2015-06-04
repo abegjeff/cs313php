@@ -17,7 +17,7 @@
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="phpProjectHome.php">Home</a></li>
             <li><a href="phpProjectInventory.php">View Inventory</a></li>
             <li><a href="phpProjectContact.php">Contact Us</a></li>
           </ul>
@@ -40,15 +40,7 @@ Password:
  </form>
  
  <?php
- session_start();
- if (isset($_POST['login']))
- {
-	$hashedpw = password_hash($_POST['password'], PASSWORD_DEFAULT);
-	
-	if (password_verify('taco', $hashedpw)) {
-    echo 'Password is valid!';
- }
- }
+ 
  ?>
  
 
