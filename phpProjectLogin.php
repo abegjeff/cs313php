@@ -29,8 +29,6 @@
   </div>
 </nav>
 
-
-
 <form action="phpProjectAdmin.php" method="POST" id="login">
 UserName:
 	<input  type="text" name="username"><br />
@@ -39,10 +37,5 @@ Password:
  <button type="submit" value="Submit" name="login">Submit</button>
  </form>
  
- <?php
- 
- ?>
- 
-
 </body>
 </html>

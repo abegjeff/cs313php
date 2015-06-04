@@ -19,7 +19,6 @@
 </head>
 <body>
 
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -38,8 +37,6 @@
     </div>
   </div>
 </nav>
-
-
 <?php	
 
 $openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
@@ -78,13 +75,13 @@ else
 			echo "Error!:" . $ex->getMessage();
 			die(); 
 		}
-}
+/*}*/
 
 ?>
 
 <?php
-session_start();
-if (isset($_POST))
+/*session_start();
+if (isset($_POST['login']))
 {
 	echo "SET";
 }
@@ -121,7 +118,7 @@ if ($_SESSION["logged"] == false)
 {
 	header('Location:phpProjectLogin.php');
 	
-}
+}*/
 
 ?>
 
