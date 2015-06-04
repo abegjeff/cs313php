@@ -84,8 +84,8 @@ session_start();
 	if (isset($_POST['login']))
 	{
 		echo "SET";
-		echo $_POST['username'] . "<br/>";
-		eccho $_POST['password'] . "<br/>";
+		echo $_GET['username'] . "<br/>";
+		eccho $_GET['password'] . "<br/>";
 	}
 	else{
 		echo "Not set";
