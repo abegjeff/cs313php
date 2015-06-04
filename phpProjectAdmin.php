@@ -84,6 +84,13 @@ else
 
 <?php
 session_start();
+if (isset($_POST))
+{
+	echo "SET";
+}
+else{
+	echo "Not set";
+}
 if (!empty($_POST['username']) && !empty(['password']))
 {
 	
