@@ -42,12 +42,10 @@
 
 <?php	
 
-/*$openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
+$openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
 
 if ($openShiftVar === null || $openShiftVar == "")
 {
-     // Not in the openshift environment
-     $dbHost = "localhost";
 	 try
 		{
 			$user = "admin";
@@ -61,10 +59,9 @@ if ($openShiftVar === null || $openShiftVar == "")
 			echo "Error!:" . $ex->getMessage();
 			die(); 
 		}
-
 }
 else 
-{*/
+{
 	$dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
 	$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
 	$dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
@@ -81,7 +78,7 @@ else
 			echo "Error!:" . $ex->getMessage();
 			die(); 
 		}
-/*}*/
+}
 
 ?>
 
@@ -111,7 +108,7 @@ if (!empty($_POST['username']) && !empty(['password']))
 }
 if ($_SESSION["logged"] == false)
 {
-	header('Location: http://localhost/phpProjectLogin.php');
+	header('Location: http://php-abegjeff.rhcloud.com/phpProjectLogin.php');
 	
 }
 
