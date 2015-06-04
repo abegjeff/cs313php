@@ -81,20 +81,20 @@ else
 
 <?php
 session_start();
-/*if (isset($_POST['login']))
+if (isset($_POST['login']))
 {
 	echo "SET";
 }
 else{
 	echo "Not set";
-}*/
-if (!empty($_POST['username']) && !empty(['password']))
+}
+/*if (!empty($_POST['username']) && !empty(['password']))
 {
 	
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	
-	echo $username . "<br/>" . $password;
+	echo $username . "<br/>" . $password;*/
 
 /*	foreach($db->query("SELECT user_name, password FROM user_info;") as $row)
 			{
