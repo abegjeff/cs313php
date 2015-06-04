@@ -37,6 +37,7 @@
     </div>
   </div>
 </nav>
+
 <?php	
 
 $openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
@@ -80,12 +81,14 @@ else
 ?>
 
 <?php
-session_start();
+//session_start();
+print_r($_POST);
+
 	if (isset($_POST['login']))
 	{
 		echo "SET";
-		echo $_GET['username'] . "<br/>";
-		eccho $_GET['password'] . "<br/>";
+	//	echo $_GET['username'] . "<br/>";
+	//	echo $_GET['password'] . "<br/>";
 	}
 	else{
 		echo "Not set";
