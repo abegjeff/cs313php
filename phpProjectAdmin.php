@@ -87,8 +87,8 @@ print_r($_POST);
 	if (isset($_POST['login']))
 	{
 		echo "SET";
-	//	echo $_GET['username'] . "<br/>";
-	//	echo $_GET['password'] . "<br/>";
+		echo $_GET['username'] . "<br/>";
+		echo $_GET['password'] . "<br/>";
 	}
 	else{
 		echo "Not set";

@@ -35,7 +35,7 @@ UserName:
 Password:
 	<input  type="text" name="password"><br />
  <button type="submit" value="Submit" name="login">Submit</button>
-</form>
+ </form>
  
  <?php
  //session_start();
