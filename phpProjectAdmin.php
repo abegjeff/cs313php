@@ -96,11 +96,15 @@ if (!empty($_POST['username']) && !empty(['password']))
 			{
 				if ($row["user_name"] == $username && $row["password"] == $password)
 				{
-					$_SESSION["logged"] = true;
+					echo "Username:" . $username . "<br/>";
+					echo "DB Username:" . $row['user_name'] . "<br/>";
+					echo "Password: " . $password . "<br/>";
+					echo "DBPassword: " . $row['password'] . "<br/>";
+					//$_SESSION["logged"] = true;
 				}
 				else
 				{
-					$_SESSION["logged"] = false;
+					//$_SESSION["logged"] = false;
 				}
 			}
 
