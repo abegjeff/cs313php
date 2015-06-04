@@ -80,7 +80,7 @@ else
 ?>
 
 <?php
-/*session_start();
+session_start();
 if (isset($_POST['login']))
 {
 	echo "SET";
@@ -114,7 +114,7 @@ if (!empty($_POST['username']) && !empty(['password']))
 
 
 }
-if ($_SESSION["logged"] == false)
+/*if ($_SESSION["logged"] == false)
 {
 	header('Location:phpProjectLogin.php');
 	
