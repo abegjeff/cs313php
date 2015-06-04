@@ -94,7 +94,7 @@ print_r($_POST);
 	else{
 		echo "Not set";
 	}
-
+/*
 if (!empty($_POST['username']) && !empty(['password']))
 {
 	
@@ -103,7 +103,7 @@ if (!empty($_POST['username']) && !empty(['password']))
 	
 	echo $username . "<br/>" . $password;
 	echo "<br/>" . $_POST['username'] . $_POST['password'];
-/*
+
 	foreach($db->query("SELECT user_name, password FROM user_info;") as $row)
 			{
 				if ($row['user_name'] == $username && $row['password'] == $password)
@@ -120,8 +120,8 @@ if (!empty($_POST['username']) && !empty(['password']))
 				}
 			}
 
-*/
-}
+
+}*/
 /*
 if ($_SESSION["logged"] == false)
 {
