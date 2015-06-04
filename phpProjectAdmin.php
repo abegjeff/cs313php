@@ -81,44 +81,43 @@ else
 
 <?php
 session_start();
-if (isset($_POST['login']))
+/*if (isset($_POST['login']))
 {
 	echo "SET";
 }
 else{
 	echo "Not set";
-}
-/*if (!empty($_POST['username']) && !empty(['password']))
+}*/
+if (!empty($_POST['username']) && !empty(['password']))
 {
 	
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	
-//	echo $username . "<br/>";
-//echo $password . "<br/>";
+
 	foreach($db->query("SELECT user_name, password FROM user_info;") as $row)
 			{
 				if ($row["user_name"] == $username && $row["password"] == $password)
 				{
-					echo "Username:" . $username . "<br/>";
+				/*	echo "Username:" . $username . "<br/>";
 					echo "DB Username:" . $row['user_name'] . "<br/>";
 					echo "Password: " . $password . "<br/>";
-					echo "DBPassword: " . $row['password'] . "<br/>";
-					//$_SESSION["logged"] = true;
+					echo "DBPassword: " . $row['password'] . "<br/>";*/
+					$_SESSION["logged"] = true;
 				}
 				else
 				{
-					//$_SESSION["logged"] = false;
+					$_SESSION["logged"] = false;
 				}
 			}
 
 
-}*/
-/*if ($_SESSION["logged"] == false)
+}
+if ($_SESSION["logged"] == false)
 {
 	header('Location:phpProjectLogin.php');
 	
-}*/
+}
 
 ?>
 
