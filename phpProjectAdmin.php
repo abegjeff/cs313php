@@ -33,7 +33,7 @@
           </ul>
         </li>
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="phpProjectLogin.php"><span class="glyphicon glyphicon-log-in"></span> Stuff</a></li>
+        <li class="active"><a href="phpProjectLogin.php"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
       </ul>
     </div>
   </div>
