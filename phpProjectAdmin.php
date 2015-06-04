@@ -80,7 +80,7 @@ else
 ?>
 
 <?php
-session_start();
+//session_start();
 if (isset($_POST['login']))
 {
 	echo "SET";
