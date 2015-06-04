@@ -37,5 +37,8 @@ Password:
  <button type="submit" value="Submit" name="login">Submit</button>
  </form>
  
+ <?php
+ session_start();
+ ?>
 </body>
 </html>
