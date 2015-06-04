@@ -42,7 +42,13 @@
 
 <?php	
 
-		try
+$openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
+
+if ($openShiftVar === null || $openShiftVar == "")
+{
+     // Not in the openshift environment
+     $dbHost = "localhost";
+	 try
 		{
 			$user = "admin";
 			$password = "1111"; 
@@ -50,12 +56,15 @@
 			$name = "php_project";
 			$db = new PDO("mysql:host=$host;dbname=$name", $user, $password);
 		}
-		catch (PDOException $ex) 
+	catch (PDOException $ex) 
 		{
 			echo "Error!:" . $ex->getMessage();
 			die(); 
 		}
-	/*	
+
+}
+else 
+{
 	$dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
 	$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
 	$dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
@@ -71,7 +80,12 @@
 		{
 			echo "Error!:" . $ex->getMessage();
 			die(); 
-		}*/
+		}
+}
+
+
+	
+
 ?>
 
 <?php
