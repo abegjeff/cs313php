@@ -95,11 +95,11 @@ print_r($_POST);
 		echo "Not set";
 	}
 */
-if (!empty($_POST["username"]) && !empty(["password"]))
+if (!empty($_POST['username']) && !empty(['password']))
 {
 	
-	$username = $_POST["username"];
-	$password = $_POST["password"];
+	$username = $_POST['username'];
+	$password = $_POST['password'];
 	
 	echo $username . "<br/>" . $password;
 	echo "<br/>" . $_POST['username'] . $_POST['password'];
@@ -122,6 +122,7 @@ if (!empty($_POST["username"]) && !empty(["password"]))
 
 */
 }
+/*
 if ($_SESSION["logged"] == false)
 {
 	header('Location:phpProjectLogin.php');
