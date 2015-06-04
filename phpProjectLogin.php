@@ -35,7 +35,7 @@
    <legend>UserName:</legend>
 	 <input  type="text" name="username"><br />
    <legend>Password:</legend>
-	<input  type="text" name="password"><br />
+	<input  type="text" name="password"><br /><br />
  </fieldset>
  <button type="submit" value="Submit" name="login">Submit</button>
  </form>
