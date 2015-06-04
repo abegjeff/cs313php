@@ -83,7 +83,7 @@ else
 ?>
 
 <?php
-session_start();
+/*session_start();
 if (!empty($_POST['username']) && !empty(['password']))
 {
 	
@@ -110,7 +110,7 @@ if ($_SESSION["logged"] == false)
 {
 	header('Location: http://php-abegjeff.rhcloud.com/phpProjectLogin.php');
 	
-}
+}*/
 
 ?>
 
