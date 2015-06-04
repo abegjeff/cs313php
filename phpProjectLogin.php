@@ -29,7 +29,7 @@
   </div>
 </nav>
 
-<form action="phpProjectAdmin.php" method="POST" id="login">
+<form action="phpProjectAdmin.php" method="POST">
 UserName:
 	<input  type="text" name="username"><br />
 Password:

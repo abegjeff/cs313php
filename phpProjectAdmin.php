@@ -82,7 +82,7 @@ else
 
 <?php
 //session_start();
-/*
+
 print_r($_POST);
 
 	if (isset($_POST['login']))
@@ -94,7 +94,7 @@ print_r($_POST);
 	else{
 		echo "Not set";
 	}
-*/
+/*
 if (!empty($_POST['username']) && !empty(['password']))
 {
 	
@@ -120,8 +120,8 @@ if (!empty($_POST['username']) && !empty(['password']))
 				}
 			}
 
-*/
-}
+
+}*/
 /*
 if ($_SESSION["logged"] == false)
 {
