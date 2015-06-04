@@ -40,7 +40,7 @@ Password:
  </form>
  
  <?php
- 
+ session_start();
  if (isset($_POST['login']))
  {
 	$hashedpw = password_hash($_POST['password'], PASSWORD_DEFAULT);
