@@ -32,12 +32,14 @@
   </div>
 </nav>
 
-<form action="" method="POST">
+<form action="" method="POST" form="email">
  <fieldset>
    <legend>From:</legend>
 	 <input  type="text" name="from"><br /><br/>
    <legend>Message:</legend>
-	<input  type="textfield" name="message"><br /><br /><br/>
+	<textarea rows="4" cols="50" name="message" form="email">
+	
+	</textarea>
  </fieldset>
  <button type="submit" value="Submit" name="contact">Send Email</button>
  </form>
@@ -50,19 +52,29 @@ if (!empty($_POST['from']) && !empty($_POST['message']))
 	$from = $_POST['from'];
 	$message = $_POST['message'];
 	
+	// the message
+	$msg = "First line of text\nSecond line of text";
+
+// use wordwrap() if lines are longer than 70 characters
+	$msg = wordwrap($msg,70);
+
+// send email
+	mail("mistajeffles@gmail.com","My subject",$message);
+	
 	echo $from . "<br/>";
 	echo $message;
 	
 }
 
-// the message
-$msg = "First line of text\nSecond line of text";
+else
+{
+	echo '<script language="javascript">';
+	echo "alert(\"Please fill in all required fields\")";	
+	echo '</script>';
+	
+}
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
 
-// send email
-mail("mistajeffles@gmail.com","My subject",$msg);
 ?>
 
 
