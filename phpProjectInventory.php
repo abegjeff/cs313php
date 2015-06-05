@@ -4,8 +4,9 @@
   <title>Inventory</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="phpInventoryCSS.css">
+
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="phpInventoryCSS.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="phpjs.js">
@@ -16,7 +17,9 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="phpProjectHome.php">Clark Center Fires</a>
+        <a class="navbar-brand" href="#">
+         <img src="logo2.png" alt="" width="150" height="55">
+	  </a>
     </div>
     <div>
       <ul class="nav navbar-nav">
@@ -39,8 +42,6 @@ $openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
 
 if ($openShiftVar === null || $openShiftVar == "")
 {
-     // Not in the openshift environment
-     $dbHost = "localhost";
 	 try
 		{
 			$user = "admin";
@@ -54,7 +55,6 @@ if ($openShiftVar === null || $openShiftVar == "")
 			echo "Error!:" . $ex->getMessage();
 			die(); 
 		}
-
 }
 else 
 {
@@ -75,23 +75,6 @@ else
 			die(); 
 		}
 }
-/*
-	$dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
-	$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
-	$dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
-	$dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
-	$dbName= "php";
-		try
-		{
-			$user = "inventory";
-			$password = "guns"; 
-			$db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
-		}
-		catch (PDOException $ex) 
-		{
-			echo "Error!:" . $ex->getMessage();
-			die(); 
-		}*/
 ?>
 
 <div class="container">
@@ -138,8 +121,6 @@ foreach ($db->query("SELECT caliber FROM calibers ORDER BY caliber") as $row)
   <option disabled selected> -- select an option -- </option>
   <option value="Semi-Automatic">Semi-Automatic</option>
   <option value="Automatic">Automatic</option>
-  <option value="Revolver">Revolver</option>
-  <option value="N/A">N/A</option>
 </select> 
 
 <br /><br />

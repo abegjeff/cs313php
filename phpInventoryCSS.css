@@ -1,3 +1,10 @@
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 55px;
+    height: 55px;
+    padding-top: 0;
+}
+
 #quantity {
    padding-left: 30px;  
 }
@@ -20,4 +27,11 @@
 {
 	margin-right: 20px;
 	margin-left: 5px;
+}
+
+.navbar {
+  background-color: white; /* background color will be black for all browsers */
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
 }
