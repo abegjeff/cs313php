@@ -46,11 +46,29 @@
 
 <?php
 
+/code/
+$name = $_POST['name'];
+$email = $_POST['email'];
+$website = $_POST['website'];
+$text = $_POST['comments'];
+
+
+$subject = 'Message from soleus running website';
+$body = "Name: $name\nEmail: $email\nWebsite: $website\nComments: $text";
+
+
+mail($to, $subject, $body);
+
+/code/
+
 if (!empty($_POST['from']) && !empty($_POST['message']))
 {
 	$from = $_POST['from'];
 	$message = $_POST['message'];
-	
+	$to = 'mistajeffles@gmail.com';
+	ini_set('sendmail_from', 'abe12002@byui.edu');
+	$WAGLOBAL_Email_Server = "" ;
+	/*
 	echo $message . "<br/>";
 	// the message
 	$msg = "First line of text\nSecond line of text";
@@ -58,8 +76,8 @@ if (!empty($_POST['from']) && !empty($_POST['message']))
 // use wordwrap() if lines are longer than 70 characters
 	$msg = wordwrap($msg,70);
 
-// send email
-	mail("jeffabagelen@hotmail.com","My subject",$message);
+// send email*/
+	mail($to,"My subject",$message);
 	
 	echo $from . "<br/>";
 	echo $message;
