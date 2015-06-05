@@ -50,9 +50,10 @@ if (!empty($_POST['from']) && !empty($_POST['message']))
 {
 	$from = $_POST['from'];
 	$message = $_POST['message'];
-	$to = 'mistajeffles@gmail.com';
-	ini_set('sendmail_from', 'abe12002@byui.edu');
+	$to = 'jeffabagelen@hotmail.com';
 	$WAGLOBAL_Email_Server = "" ;
+	ini_set('sendmail_from', 'mistajeffles@gmail.com');
+
 	/*
 	echo $message . "<br/>";
 	// the message
