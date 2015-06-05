@@ -62,9 +62,8 @@ if (!empty($_POST['from']) && !empty(htmlspecialchars($_POST['message'])))
 	
 	echo $from . "<br/>";
 	echo $message;
-	
 }
-
+/*
 else
 {
 	echo '<script language="javascript">';
@@ -72,7 +71,7 @@ else
 	echo '</script>';
 	
 }
-
+*/
 
 ?>
 
