@@ -46,9 +46,6 @@
 
 <?php
 
-echo $_POST['from'] . "<br/>";
-echo htmlspecialchars($_POST['message']);
-
 if (!empty($_POST['from']) && !empty(htmlspecialchars($_POST['message'])))
 {
 	$from = $_POST['from'];
