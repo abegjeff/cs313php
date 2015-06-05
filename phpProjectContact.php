@@ -32,6 +32,16 @@
   </div>
 </nav>
 
+<form action="" method="POST">
+ <fieldset>
+   <legend>From:</legend>
+	 <input  type="text" name="from"><br /><br/>
+   <legend>Message:</legend>
+	<input  type="textfield" name="message"><br /><br /><br/>
+ </fieldset>
+ <button type="submit" value="Submit" name="contact">Send Email</button>
+ </form>
+
 
 <?php
 // the message
