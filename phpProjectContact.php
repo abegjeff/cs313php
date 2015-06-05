@@ -48,14 +48,27 @@
 
 if (!empty($_POST['from']) && !empty($_POST['message']))
 {
-
+/*
 	$from = $_POST['from'];
 	$message = $_POST['message'];
 	$to = 'jeffabagelen@hotmail.com';
 	$WAGLOBAL_Email_Server = "" ;
+	
+	*/
+	
+	
 	ini_set('sendmail_from', 'mistajeffles@gmail.com');
 	ini_set("SMTP","smtp.example.com" ); 
 
+	
+	$Name = "Da Duder"; //senders name 
+	$email = "jeffabagelen@hotamil.com"; //senders e-mail adress 
+	$recipient = "mistajeffles@gmail.com"; //recipient 
+	$mail_body = "Hello Email World!"; //mail body 
+	$subject = "Test Email"; //subject 
+	$header = "From: ". $Name . " <" . $email . ">\r\n"; //optional headerfields 
+
+	mail($recipient, $subject, $mail_body, $header); //mail command :) 
 	/*
 	echo $message . "<br/>";
 	// the message
@@ -66,12 +79,12 @@ if (!empty($_POST['from']) && !empty($_POST['message']))
 
 // send email*/
 
-	$subject = 'the subject';
+/*	$subject = 'the subject';
 	$headers = 'From: webmaster@example.com' . "\r\n" .
        'Reply-To: webmaster@example.com';
 
 	mail($to, $subject, $message, $headers);
-	
+	*/
 
 	//mail($to,"My subject",$message);
 	
