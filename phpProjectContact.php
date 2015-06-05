@@ -49,10 +49,10 @@
 
 
 <?php
-
+/*
 if (!empty($_POST['from']) && !empty($_POST['message']))
 {
-/*
+
 	$from = $_POST['from'];
 	$message = $_POST['message'];
 	$to = 'jeffabagelen@hotmail.com'; 
