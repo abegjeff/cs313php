@@ -51,10 +51,10 @@ if (!empty($_POST['from']) && !empty($_POST['message']))
 /*
 	$from = $_POST['from'];
 	$message = $_POST['message'];
-	$to = 'jeffabagelen@hotmail.com';
+	$to = 'jeffabagelen@hotmail.com'; */
 	$WAGLOBAL_Email_Server = "" ;
 	
-	*/
+	
 	
 	
 	ini_set('sendmail_from', 'mistajeffles@gmail.com');
