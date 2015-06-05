@@ -49,7 +49,7 @@
 if (!empty($_POST['from']) && !empty(htmlspecialchars($_POST['message'])))
 {
 	$from = $_POST['from'];
-	$message = $_POST['message'];
+	$message = htmlspecialchars($_POST['message']);
 	
 	// the message
 	$msg = "First line of text\nSecond line of text";
