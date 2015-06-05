@@ -44,6 +44,17 @@
 
 
 <?php
+
+if (!empty($_POST['from']) && !empty($_POST['message']))
+{
+	$from = $_POST['from'];
+	$message = $_POST['message'];
+	
+	echo $from . "<br/>";
+	echo $message;
+	
+}
+
 // the message
 $msg = "First line of text\nSecond line of text";
 
