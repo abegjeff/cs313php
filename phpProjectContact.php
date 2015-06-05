@@ -55,7 +55,7 @@ if (!empty($_POST['from']) && !empty($_POST['message']))
 /*
 	$from = $_POST['from'];
 	$message = $_POST['message'];
-	$to = 'jeffabagelen@hotmail.com'; */
+	$to = 'jeffabagelen@hotmail.com'; 
 	$WAGLOBAL_Email_Server = "" ;
 	
 	
@@ -81,14 +81,13 @@ if (!empty($_POST['from']) && !empty($_POST['message']))
 // use wordwrap() if lines are longer than 70 characters
 	$msg = wordwrap($msg,70);
 
-// send email*/
+// send email
 
-/*	$subject = 'the subject';
+	$subject = 'the subject';
 	$headers = 'From: webmaster@example.com' . "\r\n" .
        'Reply-To: webmaster@example.com';
 
 	mail($to, $subject, $message, $headers);
-	*/
 
 	//mail($to,"My subject",$message);
 	
