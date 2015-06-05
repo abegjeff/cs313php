@@ -46,21 +46,6 @@
 
 <?php
 
-/code/
-$name = $_POST['name'];
-$email = $_POST['email'];
-$website = $_POST['website'];
-$text = $_POST['comments'];
-
-
-$subject = 'Message from soleus running website';
-$body = "Name: $name\nEmail: $email\nWebsite: $website\nComments: $text";
-
-
-mail($to, $subject, $body);
-
-/code/
-
 if (!empty($_POST['from']) && !empty($_POST['message']))
 {
 	$from = $_POST['from'];
