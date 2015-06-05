@@ -32,16 +32,20 @@
   </div>
 </nav>
 
-<form action="" method="POST" form="email">
- <fieldset>
-   <legend>From:</legend>
-	 <input  type="text" name="from"><br /><br/>
+
+<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+<fieldset>
+   <legend>Name:</legend>
+	 <input  type="text" name="from" size="20"><br /><br/>
+   <legend>Email:</legend>
+	 <input type="text" name="email" size="20"><br>
    <legend>Message:</legend>
 	<textarea rows="4" cols="50" name="message">
 	</textarea>
  </fieldset>
- <button type="submit" value="Submit" name="contact">Send Email</button>
- </form>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
 
 
 <?php
