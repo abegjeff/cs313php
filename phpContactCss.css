@@ -1,10 +1,3 @@
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 55px;
-    height: 55px;
-    padding-top: 0;
-}
-
 .navbar {
   background-color: white; /* background color will be black for all browsers */
   background-image: none;
@@ -12,3 +5,10 @@
   filter: none;
 }
 
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 55px;
+    height: 55px;
+    padding-top: 0;
+
+}
