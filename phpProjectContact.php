@@ -46,11 +46,12 @@
 
 <?php
 
-if (!empty($_POST['from']) && !empty(htmlspecialchars($_POST['message'])))
+if (!empty($_POST['from']) && !empty($_POST['message']))
 {
 	$from = $_POST['from'];
-	$message = htmlspecialchars($_POST['message']);
+	$message = $_POST['message'];
 	
+	echo $message . "<br/>";
 	// the message
 	$msg = "First line of text\nSecond line of text";
 
