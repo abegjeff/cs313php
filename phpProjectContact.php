@@ -37,8 +37,7 @@
    <legend>From:</legend>
 	 <input  type="text" name="from"><br /><br/>
    <legend>Message:</legend>
-	<textarea rows="4" cols="50" name="message" form="email">
-	
+	<textarea rows="4" cols="50" name="message">
 	</textarea>
  </fieldset>
  <button type="submit" value="Submit" name="contact">Send Email</button>
@@ -47,7 +46,10 @@
 
 <?php
 
-if (!empty($_POST['from']) && !empty($_POST['message']))
+echo $_POST['from'] . "<br/>";
+echo htmlspecialchars($_POST['message']);
+
+if (!empty($_POST['from']) && !empty(htmlspecialchars($_POST['message'])))
 {
 	$from = $_POST['from'];
 	$message = $_POST['message'];
@@ -59,7 +61,7 @@ if (!empty($_POST['from']) && !empty($_POST['message']))
 	$msg = wordwrap($msg,70);
 
 // send email
-	mail("mistajeffles@gmail.com","My subject",$message);
+	mail("jeffabagelen@hotmail.com","My subject",$message);
 	
 	echo $from . "<br/>";
 	echo $message;
